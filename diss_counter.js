@@ -15,6 +15,10 @@ var diss_counter = (function() {
 		return {"sum": sum, "prob_fun": prob_fun, "table": table};
 	};
 
+	module.table = function(dc) {
+		return dc.table;
+	};
+
 	module.next = function(dc) {
 		var r = Math.random() * dc.sum;
 		dc.sum = 0;
